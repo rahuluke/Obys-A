@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'gilroy';
+    src: url(./Gilroy-Regular.ttf);
+
+}
+
+@font-face {
+    font-family: 'costal';
+    src: url(./CostalineThin-OGLRd.otf);
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: gilroy;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+
+#main{
+    position: relative;
+    background-color: #111;
+}
+
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #0B0B0B;
+    padding: 20vh 10vw;
+}
+
+.line {
+    /* background-color: blue; */
+    /* line-height: 17vh; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:3vw;
+}
+
+#line1_part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+#line1_part1 h5 , #line1_part1 h6 {
+    font-size: 3.4vw;
+    font-family: 'Silk Serif';
+    font-weight: 200;
+}
+
+#line1_part1 h5{
+    /* background-color: red; */
+    text-align: right;
+    width: 5vw;
+
+}
+.line h1{
+    font-size: 15vh;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+
+.line h2{
+    font-size: 5.5vw;
+    /* font-family: 'Silk Serif'; */
+    font-weight: 300;
+    animation-name: anime;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+        0%{
+            font-family:'gilroy';
+            -webkit-text-stroke: 1px #fff; 
+            font-weight: 500; 
+            color: #fff; 
+            opacity: 1;
+        }
+
+        47%{
+            font-family:'gilroy';
+            -webkit-text-stroke: 1px #fff; 
+            font-weight: 500; 
+            color: #fff; 
+            opacity: 0;
+        }
+
+        50%{
+           font-family: "silk serif"; 
+           -webkit-text-stroke-color: 1px #fff; 
+           font-weight: 500;
+           color:transparent;
+           opacity: 1;
+        }
+
+        100%{
+           font-family: "silk serif"; 
+           -webkit-text-stroke-color: 1px #fff; 
+           font-weight: 500;
+           color:transparent;
+           opacity: 0;
+        }
+}
+
+
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #803b3b  ;
+}
