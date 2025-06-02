@@ -29,6 +29,18 @@ html , body{
     background-color: #111;
 }
 
+
+#crsr{
+    height: 2vw;
+    width: 2vw;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transform: translate(-50%,-50%);
+}
+
 #loader{
     height: 100%;
     width: 100%;
@@ -79,7 +91,7 @@ html , body{
     /* font-family: 'Silk Serif'; */
     font-weight: 300;
     animation-name: anime;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
@@ -92,7 +104,7 @@ html , body{
             opacity: 1;
         }
 
-        47%{
+        50%{
             font-family:'gilroy';
             -webkit-text-stroke: 1px #fff; 
             font-weight: 500; 
@@ -100,7 +112,7 @@ html , body{
             opacity: 0;
         }
 
-        50%{
+        60%{
            font-family: "silk serif"; 
            -webkit-text-stroke-color: 1px #fff; 
            font-weight: 500;
@@ -117,10 +129,44 @@ html , body{
         }
 }
 
-
-
 #page1{
     height: 100vh;
     width: 100%;
-    background-color: #803b3b  ;
+    background-color: black  ;
+}
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.7vw 8.6vw;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    gap: 3vw;
+}
+
+#nav-part2 h4{
+    font-size:1.2vw;
+    font-weight: 500;
+}
+
+.hero{
+    /* background-color: red; */
+    width: 72%;
+    margin-left: 28%;    
+}
+
+.hero:nth-child(2){
+    margin-top: 11vh;
+}
+
+.hero h1{
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    line-height: 15vh;
 }
