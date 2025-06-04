@@ -158,15 +158,34 @@ html , body{
 .hero{
     /* background-color: red; */
     width: 72%;
-    margin-left: 28%;    
+    margin-left: 28%; 
+    height: fit-content;  
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 999;
 }
 
 .hero:nth-child(2){
-    margin-top: 11vh;
+    margin-top: 6vh;
 }
 
 .hero h1{
     font-size: 7.5vw;
     text-transform: uppercase;
     line-height: 15vh;
+}
+
+.hero h2 , .hero h3{
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    line-height: 15vh;
+    text-decoration: underline;
+}
+
+.hero h2:hover{
+    -webkit-text-stroke:0.9px #fff;
+    color: transparent;
+    font-weight: 300;
 }

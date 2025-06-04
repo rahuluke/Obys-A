@@ -37,6 +37,13 @@ t1.from("#page1",{
 
 t1.to("#loader",{
         display:'none'
+});
+t1.from("#nav",{
+        opacity:0
+})
+t1.from("#Hero1 h1,#Hero2 h1,#Hero3 h2,#Hero4 h1",{
+        y:100,
+        stagger: 0.2,
 })
 }
 Loader();
