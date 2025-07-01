@@ -92,13 +92,13 @@ body{
     font-size: 5.5vw;
     /* font-family: 'Silk Serif'; */
     font-weight: 300;
-    animation-name: anime;
+    animation-name: loading_anime;
     animation-duration: 0.8s;
     animation-delay: 2s;
     animation-iteration-count: infinite;
 }
 
-@keyframes anime {
+@keyframes loading_anime {
         0%{
             font-family:'gilroy';
             -webkit-text-stroke: 1px #fff; 
@@ -153,21 +153,22 @@ body{
     gap: 3vw;
 }
 
+
+
 #nav-part2 h4{
     font-size:1.2vw;
     font-weight: 500;
 }
 
-.hero{
+.hero {
     /* background-color: red; */
     width: 72%;
     margin-left: 28%; 
     height: fit-content;  
-    overflow: hidden; 
+    overflow-y: hidden; 
     display: flex;
     align-items: center;
-    position: relative;
-    z-index: 999;
+    /* overflow-x: auto; */
 }
 
 .hero:nth-child(2){
@@ -178,6 +179,19 @@ body{
     font-size: 7.5vw;
     text-transform: uppercase;
     line-height: 15vh;
+    position: relative;
+    
+}
+
+#Hero1::before{
+    content: '01';
+    font-family: "silk serif";
+    font-size: 3vw;
+    position: absolute;
+    transform: translateX();
+    font-weight: 500;
+    left: 19%;
+    top: 26.5%;
 }
 
 .hero h2{
@@ -267,18 +281,28 @@ body{
     width: 72vw;
     position: relative;
     margin-left: 28%;
+    position: relative;
 }
 
 #page4-content h1{
     font-size: 7vw;
     text-transform: uppercase;
 }
-
+#page4-content h1::before{
+    content: '03';
+    font-family: "silk serif";
+    font-size: 3vw;
+    position: absolute;
+    transform: translateX();
+    font-weight: 500;
+    left: -13%;
+    top: 0.5%;
+}
 #page4-content .underline{
     height: 1.5px;
     width: 100%;
     background-color: #fff;
-    margin: 7vw 0;
+    margin: 3vw 0;
 }
 
 #page4-content>p{
@@ -334,5 +358,145 @@ body{
 #page5{
     min-height: 100vh;
     width: 100%;
-    padding: 5vw 0%;
+    position: relative;
 }
+
+.elem{
+    /* background-color: red; */
+    white-space: nowrap ;
+    overflow: hidden;
+    
+}
+
+.elem h1{
+    font-size: 7vw;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 10px;
+    /* background-color: red; */
+    animation-name: anime;
+    animation-duration: 10s ;
+    animation-timing-function: linear ;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes anime {
+    from{
+            transform: translateX(0);
+    }
+    to{
+            transform: translateX(calc(-100% - 20px));
+    }
+    
+}
+
+
+.elem2{
+    /* background-color: red; */
+    white-space: nowrap ;
+    overflow: hidden;
+    
+}
+
+.elem2 h1{
+    font-size: 7vw;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 10px;
+    /* background-color: red; */
+    transform: translateX(calc(-100% - 20px));
+    animation-name: anime;
+    animation-duration: 10s ;
+    animation-timing-function: linear ;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+
+}
+
+.elem span{
+    font-style: italic;
+    font-family: silk serif;
+    color: transparent;
+}
+
+.elem2 span{
+    font-style: italic;
+    font-family: silk serif;
+    color: transparent;
+}
+
+#footer{
+    height: 90vh;
+    width: 100%;
+    /* background-color: red; */
+    padding-left: 28vw;
+}
+
+#footer h1{
+    /* background-color:blue; */
+    font-size: 8vw;
+    width: 60vw;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#footer h1::before{
+    content: '04';
+    font-family: "silk serif";
+    font-size: 3vw;
+    position: absolute;
+    transform: translateX();
+    font-weight: 500;
+    left: -15%;
+    top: 6%;
+}
+
+
+
+.under-line{
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    margin: 2vw 0;
+}
+
+#footer-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 15vw;
+    padding-top: 4vw;
+    margin-bottom: 6vw;
+}
+
+#footer-div h6{
+    font-size: 2vw;
+    margin-bottom: 2vw;
+}
+
+.box{
+    
+}
+
+#footer-div h5{
+    font-size:1vw;
+    font-weight: 400;
+    margin: 0.2vh 0;
+
+}
+
+#footer>h5{
+    font-weight: 500;
+    font-size: 0.9vw;
+}
+
+
+
+
