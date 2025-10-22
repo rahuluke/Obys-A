@@ -2,19 +2,19 @@
 
 @font-face {
     font-family: 'gilroy';
-    src: url(./Gilroy-Regular.ttf);
+    src: url(./font/Gilroy-Regular.ttf);
 
 }
 
 @font-face {
     font-family: 'costal';
-    src: url(./CostalineThin-OGLRd.otf);
+    src: url(./font/CostalineThin-OGLRd.otf);
 
 }
 
 @font-face {
     font-family: "Plain Light";
-    src: url(./fonts/plain-regular-webfont.ttf);
+    src: url(./font/plain-regular-webfont.ttf);
 }
 
 
